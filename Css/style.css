@@ -1,0 +1,65 @@
+.Start{
+  position:relative;
+  width:100%;
+}
+.half1{
+
+    width:100%;
+    height:50vh;
+    background-color:tomato;
+
+}
+.half2{
+    width:100%;
+    height:50vh;
+    background-color:tomato;
+    
+}
+.startGame{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index: 1000;
+    transform:translate(-50%,-50%);
+  
+  
+  
+
+    }
+    /* لإخفاء العناصر بعد الأنيميشن */
+.hidden {
+  display: none !important;
+}
+
+/* التحريك لأعلى */
+.slide-up {
+  animation: slideUp 1s forwards;
+}
+
+/* التحريك لأسفل */
+.slide-down {
+  animation: slideDown 1s forwards;
+}
+
+/* keyframes */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
